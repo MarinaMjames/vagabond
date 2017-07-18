@@ -1,18 +1,38 @@
 module.exports = function(sequelize, DataTypes) {
-  var Burger = sequelize.define("Burger", {
+  var User = sequelize.define("User", {
     id: {
       type: DataTypes.INTEGER,
       autoIncrement: true,
       notNull: true,
       primaryKey: true
     },
-    burger_name: {
+    first_name: {
       type: DataTypes.STRING,
       notNull: true
     }, 
-    devoured: {
-      type: DataTypes.BOOLEAN,
-      defaultValue: false
+    last_name: {
+      type: DataTypes.STRING,
+      notNull: true
+    },
+    email: {
+      type: DataTypes.STRING,
+      notNull: true
+    },  
+    username: {
+      type: DataTypes.STRING,
+      notNull: true
+    }, 
+    password: {
+      type: DataTypes.STRING,
+      notNull: true
+    }, 
+    location: {
+      type: DataTypes.STRING,
+      notNull: true
+    }, 
+    age: {
+      type: DataTypes.INTEGER,
+      notNull: true
     }
   // },
   //   {
@@ -29,5 +49,5 @@ module.exports = function(sequelize, DataTypes) {
   //     }
   //   }
   });
-  return Burger;
+  return User;
 };
