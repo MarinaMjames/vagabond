@@ -1,4 +1,13 @@
 .vagabondLogo {
 	font-family: 'Pacifico', cursive;
 	font-size: 60px;
+
+}
+.uk-navbar-container {
+	border-bottom: 40px;
+	border: solid;
+	border-color: ab9353;
+	border-bottom-style: double;
+	border-bottom-width: 20px; 
+	padding: 20px;
 }
