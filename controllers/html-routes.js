@@ -16,4 +16,16 @@ module.exports = function(app) {
   app.get("/", function(req, res) {
     res.render("index");
   });
+<<<<<<< HEAD
+=======
+  app.get("/city/lookup", function(req, res){
+    res.render("app");
+  });
+  app.get("/account", function(req, res){
+    res.render("profile");
+  });
+  app.get("/signup", function(req, res){
+    res.render("signup");
+  });
+>>>>>>> 37175731b8233460fb3215ea0695b1fe5cd6e106
 };
