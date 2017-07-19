@@ -1,10 +1,10 @@
-// // On Click function for each gif button that pushes that value into the queryURL variable
-// $(".gifButton").click(function(){
-//   // empties the div with id food-gifs so that only those of the button clicked are shown
-//   $("#food-gifs").empty();
+// On Click function for each gif button that pushes that value into the queryURL variable
+$("#search").click(function(){
+  // // empties the div with id food-gifs so that only those of the button clicked are shown
+  // $("#food-gifs").empty();
 
 // stored the data-name in the variable gifClicked
-var cityInput = $(this).attr("data-name");
+var cityInput = $(this).attr("value");
 // console.log("Gif Button was clicked! I have a data-name of: " + gifClicked);
   // URL that gets called in the ajax function that is requesting info from the Giphy API
   var queryURL = 
