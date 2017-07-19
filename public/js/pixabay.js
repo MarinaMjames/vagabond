@@ -1,7 +1,7 @@
 // On Click function for each gif button that pushes that value into the queryURL variable
 $("#search").click(function(){
-  // // empties the div with id food-gifs so that only those of the button clicked are shown
-  // $("#food-gifs").empty();
+  // empties the div with id food-gifs so that only those of the button clicked are shown
+  $("#city-info").empty();
 
 // stored the data-name in the variable gifClicked
 var cityInput = $(this).attr("value");
@@ -21,13 +21,13 @@ var cityInput = $(this).attr("value");
     // get the data from response and store it in variable gif
     var cityImage = response;
       // console.log(gif);
-// // loop through the gif reponse data
-//       for (i = 0; i < gif.length; i++){
-//         // create p tag
-//         var p = $("<p>");
-//         //add class of rating to p tags
-//         p.addClass("rating");
-//         // add text to p tag of Rating: and the rating from the gif responses
-//         p.text("Rating: " + gif[i].rating);
-//         // store img tag in variable gifImg
-//         var gifImg = $("<img>");
+// loop through the gif reponse data
+      for (i = 0; i < cityImage.length; i++){
+        // create p tag
+        var p = $("<p>");
+        //add class of rating to p tags
+        p.addClass("rating");
+        // add text to p tag of Rating: and the rating from the gif responses
+        // p.text("Rating: " + gif[i].rating);
+        // store img tag in variable gifImg
+        var cityImg = $("<img>");
