@@ -17,7 +17,10 @@ module.exports = function(app) {
     res.render("index");
   });
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> 37175731b8233460fb3215ea0695b1fe5cd6e106
   app.get("/city/lookup", function(req, res){
     res.render("app");
   });
