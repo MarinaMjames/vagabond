@@ -16,7 +16,13 @@ module.exports = function(app) {
   app.get("/", function(req, res) {
     res.render("index");
   });
-  app.get("/api/burgers", function(req, res){
-    res.render("index");
+  app.get("/city/lookup", function(req, res){
+    res.render("app");
+  });
+  app.get("/account", function(req, res){
+    res.render("profile");
+  });
+  app.get("/signup", function(req, res){
+    res.render("signup");
   });
 };
