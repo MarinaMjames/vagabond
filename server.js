@@ -7,6 +7,7 @@
 var express = require("express");
 var bodyParser = require("body-parser");
 var handlebars = require('express-handlebars');
+var env = require('dotenv').load();
 
 // Sets up the Express App
 // =============================================================
