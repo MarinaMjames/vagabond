@@ -16,7 +16,7 @@ var cityInput = $(this).attr("data-name");
   $.ajax({
     url: queryURL,
     method: "GET"
-  })
+  });
 // once response is given from the giphy API do all this stuff: 
   .done(function(response) {
     console.log(response);
