@@ -14,40 +14,37 @@ module.exports = function(sequelize, DataTypes) {
       type: DataTypes.STRING,
       notNull: true
     },
-    email: {
-      type: DataTypes.STRING,
-      notNull: true
-    },  
-    username: {
-      type: DataTypes.STRING,
-      notNull: true
-    }, 
-    password: {
-      type: DataTypes.STRING,
+    age: {
+      type: DataTypes.INTEGER,
       notNull: true
     }, 
     location: {
       type: DataTypes.STRING,
       notNull: true
     }, 
-    age: {
-      type: DataTypes.INTEGER,
+    email: {
+      type: DataTypes.STRING,
+      notNull: true,
+      validate: {
+        isEmail: true
+      },
+    },  
+    username: {
+      type: DataTypes.TEXT,
       notNull: true
+    },
+    password: {
+      type: DataTypes.STRING,
+      allowNull: false
+    }, 
+    last_login: {
+      type: DataTypes.DATE
+    },
+    status: {
+      type: DataTypes.ENUM('active', 'inactive'),
+      defaultValue: 'active'
     }
-  // },
-  //   {
-  //     // We're saying that we want our Author to have Posts
-  //     classMethods: {
-  //       associate: function(models) {
-  //         // An Author (foreignKey) is required or a Post can't be made
-  //         Post.belongsTo(models.Author, {
-  //           foreignKey: {
-  //             allowNull: false
-  //           }
-  //         });
-  //       }
-  //     }
-  //   }
   });
   return User;
 };
+
