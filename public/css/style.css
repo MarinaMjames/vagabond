@@ -20,3 +20,12 @@
 .uk-logo:hover {
 	color: #705d56;
 }
+
+.uk-fieldset {
+	padding-right: 100px;
+	padding-left: 100px;
+	border-style: solid;
+	margin-right: 100px;
+	margin-left: 100px;
+
+}
