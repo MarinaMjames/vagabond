@@ -1,16 +1,31 @@
 .vagabondLogo {
 	font-family: 'Pacifico', cursive;
-	font-size: 60px;
-<<<<<<< HEAD
-=======
+	font-size: 50px;
+	color: #70abaf;
+
 
 }
 .uk-navbar-container {
 	border-bottom: 40px;
-	border: solid;
-	border-color: ab9353;
+	/*border: solid;*/
+	border-color: #705d56;
 	border-bottom-style: double;
-	border-bottom-width: 20px; 
-	padding: 20px;
->>>>>>> b18cc00944635c312d280add526fe190c83f9e84
+	border-bottom-width: 10px; 
+	padding: 10px;
+	background-color: #474853; 
+	background: #86b3d1;
+	color: #86b3d1;
+
+}
+
+.uk-logo:hover {
+	color: #705d56;
+}
+
+.uk-fieldset {
+	padding-right: 100px;
+	padding-left: 100px;
+	border-style: solid;
+	margin-right: 100px;
+	margin-left: 100px;
 }
