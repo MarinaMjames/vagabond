@@ -11,7 +11,17 @@
     url: queryURL,
     method: "GET",
     cors: true
-  });
+  }).done(function(response){
+    console.log(response);
+
+    var image = response.hits[0].previewURL;
+
+    console.log(image);
+
+    $("#Image1").attr("src", image);
+
+
+  })
 }
 
 $("#search").on("click", function(event){
