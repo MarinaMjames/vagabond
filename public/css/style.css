@@ -1,3 +1,7 @@
+body {
+	background-image: url(https://s-media-cache-ak0.pinimg.com/originals/34/e9/02/34e902bdbb2d06c6a12d66c3e8b4c41f.jpg);
+}
+
 .vagabondLogo {
 	font-family: 'Pacifico', cursive;
 	font-size: 50px;
@@ -67,6 +71,3 @@
 	font-weight: 1px;
 }
 
-.html {
-	background-image: url(https://s-media-cache-ak0.pinimg.com/originals/34/e9/02/34e902bdbb2d06c6a12d66c3e8b4c41f.jpg);
-}
