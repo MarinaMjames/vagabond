@@ -1,7 +1,7 @@
 body {
-	background-image: url(http://assets.fodors.com/destinations/1128/skyline-manhattan-new-york-city-new-york-usa_main.jpg);
-	background-repeat: no-repeat;
-	background-size: 100%;
+	background-image: url(https://globehuntersltd.files.wordpress.com/2014/08/new-york-cityscape.jpg);
+	background-size: 100% 100%;
+    background-repeat: no-repeat;
 
 }
 
@@ -36,9 +36,9 @@ body {
 	padding-top: 50px;
 	padding-bottom: 50px;
 	border-style: solid;
-	margin-right: 100px;
+	/*margin-right: 100px;
 	margin-left: 100px;
-}
+}*/
 
 #userSubmit {
 	text-align: center;
@@ -51,18 +51,20 @@ body {
 	padding-right: 100px;
 	padding-left: 100px;
 	border-style: solid;
-	margin-right: 250px;
+	/*margin-right: 250px;
 	margin-left: 250px;
-	margin-top: 50px;
-	margin-bottom: 300px;
+	margin-top: 150px;
+	margin-bottom: 300px;*/
 	background-color: white;
 	opacity: 0.6;
+
 }
 
 .uk-legend {
 	font-family: 'Pacifico', cursive;
 	font-size: 30px;
 	color: #70abaf;
+	opacity: 10;
 }
 
 .uk-button-primary {
@@ -75,5 +77,6 @@ body {
 	font-family: 'Pacifico', cursive;
 	font-size: 9px;
 	font-weight: 1px;
+	text-decoration-color: white;
 }
 
