@@ -1,5 +1,8 @@
 body {
-	background-image: url(https://s-media-cache-ak0.pinimg.com/originals/34/e9/02/34e902bdbb2d06c6a12d66c3e8b4c41f.jpg);
+	background-image: url(http://assets.fodors.com/destinations/1128/skyline-manhattan-new-york-city-new-york-usa_main.jpg);
+	background-repeat: no-repeat;
+	background-size: 100%;
+
 }
 
 .vagabondLogo {
@@ -53,7 +56,7 @@ body {
 	margin-top: 50px;
 	margin-bottom: 300px;
 	background-color: white;
-	opacity: 0.5;
+	opacity: 0.6;
 }
 
 .uk-legend {
