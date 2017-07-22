@@ -1,8 +1,7 @@
-.mainBody {
+.background {
 	background-image: url(https://globehuntersltd.files.wordpress.com/2014/08/new-york-cityscape.jpg);
-	background-size: 100% 200%;
     background-repeat: no-repeat;
-    overflow: hidden;
+    background-size: 150% 125%;
 
 }
 
@@ -15,7 +14,6 @@
 }
 .uk-navbar-container {
 	border-bottom: 40px;
-	/*border: solid;*/
 	border-color: #705d56;
 	border-bottom-style: double;
 	border-bottom-width: 10px; 
@@ -37,8 +35,6 @@
 	padding-top: 50px;
 	padding-bottom: 50px;
 	border-style: solid;
-	margin-right: 100px;
-	margin-left: 100px;
 }
 
 #userSubmit {
@@ -52,12 +48,10 @@
 	padding-right: 100px;
 	padding-left: 100px;
 	border-style: solid;
-	/*margin-right: 250px;
-	margin-left: 250px;
-*/	/*margin-top: 150px;
-	margin-bottom: 300px;*/
+	margin-top: 150px;
+	margin-bottom: 300px;
 	background-color: white;
-	opacity: 0.6;
+	opacity: 0.7;
 
 }
 
