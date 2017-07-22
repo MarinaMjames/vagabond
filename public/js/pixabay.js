@@ -1,6 +1,6 @@
 //Pixelbay API
 
-    function getPixelbay (){
+function getPixelbay (){
   event.preventDefault;
 // stores data-name in variable city input after click
   var cityInput = document.querySelector('.uk-select').value;

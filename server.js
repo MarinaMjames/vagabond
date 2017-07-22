@@ -40,6 +40,7 @@ app.set('view engine', 'handlebars');
 // Routes =============================================================
 require("./controllers/html-routes.js")(app);
 require("./controllers/api-routes.js")(app);
+var authRoute = require('./controllers/auth.js')(app);
 
 // Syncing our sequelize models and then starting our express app
 // db.sequelize.sync({ force: true }).then(function() {
