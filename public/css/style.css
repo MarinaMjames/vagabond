@@ -1,5 +1,8 @@
 body {
-	background-image: url();
+	background-image: url(http://assets.fodors.com/destinations/1128/skyline-manhattan-new-york-city-new-york-usa_main.jpg);
+	background-repeat: no-repeat;
+	background-size: 100%;
+
 }
 
 .vagabondLogo {
