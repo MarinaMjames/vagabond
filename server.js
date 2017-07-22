@@ -7,8 +7,8 @@
 var express = require("express");
 var bodyParser = require("body-parser");
 var handlebars = require('express-handlebars');
-var passport   = require('passport')
-var session    = require('express-session')
+var passport   = require('passport');
+var session    = require('express-session');
 var env = require('dotenv').load();
 
 // Sets up the Express App
@@ -40,7 +40,10 @@ app.set('view engine', 'handlebars');
 // Routes =============================================================
 require("./controllers/html-routes.js")(app);
 require("./controllers/api-routes.js")(app);
-var authRoute = require('./controllers/auth.js')(app);
+var authRoute = require('./controllers/auth.js')(app, passport);
+	
+//load passport strategies
+// require('./config/passport/passport.js')(passport, models.user);
 
 // Syncing our sequelize models and then starting our express app
 // db.sequelize.sync({ force: true }).then(function() {
