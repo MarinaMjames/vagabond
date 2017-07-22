@@ -1,18 +1,33 @@
 <!-- Navbar -->
 <nav class="uk-navbar-container" uk-navbar>
 	<div class="uk-navbar-item uk-logo vagabondLogo uk-navbar-left">Vagabond</div>
-		<div class="uk-navbar-item uk-navbar-right">
-			<button class="uk-button uk-button-default" type="button" href="/" uk-icon="icon: home">
-			</button>
-			<button class="uk-button uk-button-default" type="button" href="/wishlist" uk-icon="icon: heart">Wishlist
-			</button>
-			<button class="uk-button uk-button-default" type="button" href="/account" uk-icon="icon: user">
-			</button>
-		</div>
+	<div class="uk-navbar-item uk-navbar-right">
+		<button class="uk-button uk-button-default" type="button" href="/" uk-icon="icon: home">
+		</button>
+		<button class="uk-button uk-button-default" type="button" href="/wishlist" uk-icon="icon: heart">Wishlist
+		</button>
+		<button class="uk-button uk-button-default" type="button" href="/account" uk-icon="icon: user">
+		</button>
+	</div>
 </nav>
-
+<div class="uk-container" id="loginBox">
+	<fieldset class="uk-fieldset">
+		<form>
+			<legend class="uk-legend">Login</legend>
+			<div class="uk-margin">
+				<input class="uk-input uk-form-width-medium" type="text" placeholder="User Name">
+			</div>
+			<div class="uk-margin">
+				<input class="uk-input uk-form-width-medium" type="text" placeholder="Password">
+			</div>
+		</form>
+		<p id="accountYetText">Dont Have an Account Yet?</p>
+		<br>
+		<button class="uk-button uk-button-primary" id="newUserButton">SIGN UP</button>
+	</fieldset>
+</div>
 <!-- Slideshow of images -->
-<div class= "uk-container">
+{{!-- <div class= "uk-container">
 	<div  class="uk-slidenav-position" data-uk-slideshow>
 		<ul class="uk-slideshow" data-uk-slideshow="{autoplay:true}">
 			<li><img src="/images/Atlanta.png" alt=""></li>
@@ -35,5 +50,4 @@
 		<a href="" class="uk-slidenav uk-slidenav-contrast uk-slidenav-previous" data-uk-slideshow-item="previous"></a>
 		<a href="" class="uk-slidenav uk-slidenav-contrast uk-slidenav-next" data-uk-slideshow-item="next"></a>
 	</div>
-</div>
-</nav>
+</div> --}}
