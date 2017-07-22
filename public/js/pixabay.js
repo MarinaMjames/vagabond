@@ -66,7 +66,4 @@ $("#search").on("click", function(event){
 //         var cityImg = $("<img>");
 
 //       }
-//   }
-
-
-//     
+//   }  
