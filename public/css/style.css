@@ -51,6 +51,9 @@ body {
 	margin-right: 250px;
 	margin-left: 250px;
 	margin-top: 50px;
+	margin-bottom: 300px;
+	background-color: white;
+	opacity: 0.5;
 }
 
 .uk-legend {
