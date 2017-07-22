@@ -101,8 +101,13 @@
 	text-decoration-color: white;
 }
 
+#Image1{
+	height:50%;
+	width:50%;
+}
 .uk-input, .uk-select, .uk-textarea {
 	color: blue;
 	text-decoration-color: blue;
+
 }
 

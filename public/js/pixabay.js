@@ -16,11 +16,14 @@ function getPixelbay (){
   }).done(function(response){
     console.log(response);
 
-    var image = response.hits[0].previewURL;
+    var image = response.hits[0].webformatURL;
+        var image1 = response.hits[1].webformatURL;
+
 
     console.log(image);
 
     $("#Image1").attr("src", image);
+    $("#Image2").attr("src", image1);
 
 
   })
@@ -33,4 +36,7 @@ $("#search").on("click", function(event){
   getPixelbay();
 
 });
+
+
+
 
