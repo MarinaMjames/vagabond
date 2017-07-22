@@ -1,21 +1,14 @@
-<nav class="uk-navbar-container uk-margin" uk-navbar>
-	<div class="uk-navbar-left">
-		<div class="uk-navbar-item uk-logo vagabondLogo">Vagabond</div>
-	</div>
-	<div class="uk-navbar-right">
-		<div class="uk-navbar-item">
-			<button class="uk-button uk-button-default" type="button" href="/wishlist" uk-icon="icon: heart">Wishlist
-			</button>
-			<button class="uk-button uk-button-default" type="button" href="/" uk-icon="icon: home">
-			</button>
-			<button class="uk-button uk-button-default" type="button" href="/account" uk-icon="icon: user">
-			</button>
-		</div>
+<!-- Navbar -->
+<nav class="uk-navbar-container" uk-navbar>
+	<div class="uk-navbar-item uk-logo vagabondLogo uk-navbar-left">Vagabond</div>
+	<div class="uk-navbar-item uk-navbar-right">
+		<button class="uk-button uk-button-default" type="button" href="/" uk-icon="icon: home">
+		</button>
 	</div>
 </nav>
 
 	<div class="inputForm">
-		<form> <fieldset class="uk-fieldset">
+		<form> <fieldset class="uk-fieldset" id="signUpForm">
 			<center><legend class="uk-legend">Sign-Up</legend></center>
 			<div class="uk-margin">
 				<input class="uk-input" type="text" id="firstNameInput" placeholder="First Name">
@@ -38,6 +31,8 @@
 			<div class="uk-margin">
 				<input class="uk-input" type="text" id="ageInput" placeholder="Age">
 			</div>
+			<button class="uk-button uk-button-default" type="button" href="/signup">SIGN UP
+			</button>
 			
 		</fieldset>
 		
