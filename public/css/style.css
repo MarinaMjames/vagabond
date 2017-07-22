@@ -23,6 +23,7 @@
 }
 
 .uk-fieldset {
+	text-align: center;
 	padding-right: 100px;
 	padding-left: 100px;
 	padding-top: 50px;
@@ -39,11 +40,13 @@
 #loginBox {
 	text-align: center;
 	padding-top: 100px;
+	padding-bottom: 100px;
 	padding-right: 100px;
 	padding-left: 100px;
 	border-style: solid;
-	margin-right: 100px;
-	margin-left: 100px;
+	margin-right: 250px;
+	margin-left: 250px;
+	margin-top: 50px;
 }
 
 .uk-legend {
@@ -62,6 +65,8 @@
 	font-family: 'Pacifico', cursive;
 	font-size: 9px;
 	font-weight: 1px;
+}
 
-
+.html {
+	background-image: url(https://s-media-cache-ak0.pinimg.com/originals/34/e9/02/34e902bdbb2d06c6a12d66c3e8b4c41f.jpg);
 }
