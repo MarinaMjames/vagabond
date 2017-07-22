@@ -6,7 +6,3 @@ module.exports = {
     	res.render('index');
     }
 };
-
-// module.exports = {
-	
-// };
