@@ -1,32 +1,35 @@
-<!-- Navbar -->
-<nav class="uk-navbar-container" uk-navbar>
-	<div class="uk-navbar-item uk-logo vagabondLogo uk-navbar-left">Vagabond</div>
-	<div class="uk-navbar-item uk-navbar-right">
-		<button class="uk-button uk-button-default" type="button" href="/" uk-icon="icon: home">
-		</button>
-		<button class="uk-button uk-button-default" type="button" href="/wishlist" uk-icon="icon: heart">Wishlist
-		</button>
-		<button class="uk-button uk-button-default" type="button" href="/account" uk-icon="icon: user">
-		</button>
-	</div>
-</nav>
-<div class="uk-text-center uk-flex-center" uk-grid>
-	<div class="uk-container uk-width-1-2 uk-flex-center" id="backgroundImg">
-		<fieldset class="uk-fieldset uk-width-auto uk-flex-center" id="loginBox">
-			<form>
-				<legend class="uk-legend">Login</legend>
-				<div class="uk-margin">
-					<input class="uk-input uk-form-width-medium" type="text" placeholder="User Name">
-				</div>
-				<div class="uk-margin">
-					<input class="uk-input uk-form-width-medium" type="text" placeholder="Password">
-				</div>
-			</form>
-			<p id="accountYetText">Dont Have an Account Yet?</p>
-			<br>
-			<button class="uk-button uk-button-default" type="button" href="/signup">SIGN UP
+<div class="mainBody">
+	<!-- Navbar -->
+	<nav class="uk-navbar-container" uk-navbar>
+		<div class="uk-navbar-item uk-logo vagabondLogo uk-navbar-left">Vagabond</div>
+	{{!-- 	<div class="uk-navbar-item uk-navbar-right">
+			<button class="uk-button uk-button-default" type="button" href="/" uk-icon="icon: home">
 			</button>
-		</fieldset>
+			<button class="uk-button uk-button-default" type="button" href="/wishlist" uk-icon="icon: heart">Wishlist
+			</button>
+			<button class="uk-button uk-button-default" type="button" href="/account" uk-icon="icon: user">
+			</button>
+		</div> --}}
+	</nav>
+	<br>
+	<div class="uk-text-center uk-flex-center" uk-grid>
+		<div class="uk-container uk-width-1-2 uk-flex-center" id="backgroundImg">
+			<fieldset class="uk-fieldset uk-width-auto uk-flex-center" id="loginBox">
+				<form>
+					<legend class="uk-legend">Login</legend>
+					<div class="uk-margin">
+						<input class="uk-input uk-form-width-medium" type="text" placeholder="User Name">
+					</div>
+					<div class="uk-margin">
+						<input class="uk-input uk-form-width-medium" type="text" placeholder="Password">
+					</div>
+				</form>
+				<p id="accountYetText">Dont Have an Account Yet?</p>
+				<br>
+				<button class="uk-button uk-button-default" type="button" href="/signup">SIGN UP
+				</button>
+			</fieldset>
+		</div>
 	</div>
 </div>
 <!-- Slideshow of images -->
