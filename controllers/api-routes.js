@@ -21,19 +21,16 @@ module.exports = function(app) {
   // });
 
   // POST route for saving a new post
-  app.post("/signup", function(req, res) {
+  app.post("/api/users", function(req, res) {
     db.User.create(req.body).then(function(dbData) {
+      console.log(req.body);
       res.json(dbData);
     });
   });
 
   // Get rotue for retrieving a single post
-  app.get("/", function(req, res) {
-    db.User.findOne({
-      where: {
-        username: req.body.username
-      }
-    }).then(function(dbData) {
+  app.get("/api/users", function(req, res) {
+    db.User.findAll({}).then(function(dbData) {
       res.json(dbData);
     });
   });
