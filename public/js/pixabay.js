@@ -25,7 +25,9 @@ function getPixelbay (){
     $("#Image1").attr("src", image);
     $("#Image2").attr("src", image1);
 
-
+    for (var i = 0; i < response.length; i ++){
+      var images = response.hits[i].webformatURL;
+    }
   })
 }
 
