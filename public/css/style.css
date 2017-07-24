@@ -100,12 +100,14 @@
 	font-weight: 1px;
 	text-decoration-color: white;
 }
-
-#Image1{
-	height:50%;
-	width:50%;
+.item {
+	height:600px;
+	width:700px;
 }
 .uk-input, .uk-select, .uk-textarea {
 	color: black;
+}
+#carousel-example-generic{
+	width: 40%;
 }
 
