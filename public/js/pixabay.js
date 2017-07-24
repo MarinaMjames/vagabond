@@ -38,7 +38,6 @@ function getPixelbay (){
     $("#Image7").attr("src", image6);
     $("#Image8").attr("src", image7);
 
-
   })
 }
 
