@@ -13,20 +13,20 @@ module.exports = function(app) {
   // Each of the below routes just handles the HTML page that the user gets sent to.
 
   // index route loads view.html
-  app.get("/", (req, res) => {
+  app.get("/", function(req, res){
     res.render("index");
   });
 
-  app.get("/city/lookup", (req, res) => {
+  app.get("/city/lookup", function(req, res){
     res.render("app");
   });
-  app.get("/account", (req, res) => {
+  app.get("/account", function(req, res){
     res.render("profile");
   });
-  app.get("/signup", (req, res) => {
+  app.get("/signup", function(req, res){
     res.render("signup");
   });
-  app.get("/wishlist", (req, res) => {
+  app.get("/wishlist", function(req, res){
     res.render("");
   });
 };
