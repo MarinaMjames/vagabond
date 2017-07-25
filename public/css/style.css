@@ -109,3 +109,41 @@
 	color: black;
 }
 
+#accountBox {
+	text-align: center;
+	padding: 10px;
+	margin-top: 50px;
+	margin-bottom: 50px;
+	margin-right: 100px;
+	margin-left: 10px;
+	background-color: white;
+
+}
+
+#wishlistBox {
+	text-align: center;
+	padding: 10px;
+	margin-top: 150px;
+	margin-bottom: 50px;
+	margin-right: 500px;
+	margin-left: 10px;
+	background-color: white;
+}
+
+#citiesVisitedBox {
+	text-align: center;
+	padding: 10px;
+	margin-top: 150px;
+	margin-bottom: 50px;
+	margin-right: 500px;
+	margin-left: 10px;
+	background-color: white;	
+}
+
+#profileBox {
+	border-color: #705d56;
+	border-style: double;
+	border-width: 10px;
+	/*margin-top: 100px;*/
+	padding-top: 20px;
+}
