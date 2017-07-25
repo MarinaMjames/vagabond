@@ -132,6 +132,9 @@
 	background-color: white;
 	text-align: left;
 	margin-bottom: 200px;
+}
 
-
+#cityDropDown {
+	margin-top: 20px;
+	margin-bottom: 20px;
 }
