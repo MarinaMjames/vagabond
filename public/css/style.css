@@ -131,6 +131,15 @@
 	border-width: 10px;
 	background-color: white;
 	text-align: left;
+<<<<<<< HEAD
 
 
+=======
+	margin-bottom: 200px;
+>>>>>>> e5d7a7431fc0b9d2eaefc79a8dc294e4247d8103
+}
+
+#cityDropDown {
+	margin-top: 20px;
+	margin-bottom: 20px;
 }

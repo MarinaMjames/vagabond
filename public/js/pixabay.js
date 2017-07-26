@@ -29,6 +29,8 @@ function getPixelbay (){
 
     console.log(image);
 
+
+
     $("#Image1").attr("src", image);
     $("#Image2").attr("src", image1);
     $("#Image3").attr("src", image2);
@@ -41,7 +43,13 @@ function getPixelbay (){
   })
 }
 
+/* Hide carousel till city is searched for*/
+$(function(){
+  $("#carousel-example-generic").hide();
+});
+
 $("#search").on("click", function(event){
+  $('#carousel-example-generic').show();
   event.preventDefault();
   console.log("CLICK WORKS")
   $("#city-info").empty();
