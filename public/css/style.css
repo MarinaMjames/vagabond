@@ -143,3 +143,16 @@
 	margin-top: 20px;
 	margin-bottom: 20px;
 }
+
+#attractionBox {
+	text-align: center;
+	padding-top: 100px;
+	padding-bottom: 100px;
+	padding-right: 100px;
+	padding-left: 100px;
+	border-style: solid;
+	margin-top: 150px;
+	margin-bottom: 300px;
+	background-color: white;
+	opacity: 0.7;
+}
