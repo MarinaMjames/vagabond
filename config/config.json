@@ -1,7 +1,9 @@
 {
   "development": {
     "username": "root",
-    "password": "bararer3",
+
+    "password": "Beernuts12",
+
     "database": "vagabond",
     "host": "127.0.0.1",
     "dialect": "mysql"
