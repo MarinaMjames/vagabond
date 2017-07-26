@@ -1,41 +1,35 @@
-<nav class="uk-navbar-container uk-margin" uk-navbar>
-	<div class="uk-navbar-left">
-		<div class="uk-navbar-item uk-logo vagabondLogo">Vagabond</div>
-		</div>
-		<div class="uk-navbar-right">
-			<div class="uk-navbar-item">
-				<button class="uk-button uk-button-default" type="button" href="/" uk-icon="icon: home">
-				</button>
-				<button class="uk-button uk-button-default" type="button" href="/wishlist" uk-icon="icon: heart">Wishlist
-				</button>
-				<button class="uk-button uk-button-default" type="button" href="/account" uk-icon="icon: user">
-				</button>
-			</div>
-		</div>
-	
+<!-- Navbar -->
+<nav class="uk-navbar-container" uk-navbar>
+	<div class="uk-navbar-item uk-logo vagabondLogo uk-navbar-left">Vagabond</div>
 </nav>
-<div class= "uk-container">
-	<div  class="uk-slidenav-position" data-uk-slideshow>
-		<ul class="uk-slideshow" data-uk-slideshow="{autoplay:true}">
-			<li><img src="/images/Atlanta.png" alt=""></li>
-			<li><img src="/images/Austin.png" alt=""></li>
-			<li><img src="/images/Boston.png" alt=""></li>
-			<li><img src="/images/Chicago.png"  alt=""></li>
-			<li><img src="/images/Cleveland.png"  alt=""></li>
-			<li><img src="/images/DC.png"  alt=""></li>
-			<li><img src="/images/Denver.png"  alt=""></li>
-			<li><img src="/images/Las Vegas.png"  alt=""></li>
-			<li><img src="/images/Los Angeles.png"  alt=""></li>
-			<li><img src="/images/Nashville.png"  alt=""></li>
-			<li><img src="/images/New Orleans.png"  alt=""></li>
-			<li><img src="/images/New York City.png"  alt=""></li>
-			<li><img src="/images/Philadelphia.png"  alt=""></li>
-			<li><img src="/images/Portland.png"  alt=""></li>
-			<li><img src="/images/San Francisco.png" alt=""></li>
-			<li><img src="/images/Seattle.png" alt=""></li>
-		</ul>
-		<a href="" class="uk-slidenav uk-slidenav-contrast uk-slidenav-previous" data-uk-slideshow-item="previous"></a>
-		<a href="" class="uk-slidenav uk-slidenav-contrast uk-slidenav-next" data-uk-slideshow-item="next"></a>
-	</div>
+
+<div class="background uk-width-1-1">
+<div class="uk-width-1-3">
 </div>
-</nav>
+	<div class="uk-container uk-width-1-3" id="backgroundImg">
+		<fieldset class="uk-fieldset" id="loginBox">
+			<form class="uk-form">
+				<legend class="uk-legend">Login</legend>
+				<div class="uk-margin">
+					<input class="uk-input uk-form-width-medium" id="username" type="text" placeholder="User Name" required>
+				</div>
+				<div class="uk-margin uk-form-password">
+					<input class="uk-input uk-form-password-toggle" type="password" id="passwordInput" placeholder="Password" data-uk-form-password></input>
+				</div>
+			</form>
+			<a class="uk-button uk-button-default" type="button" href="/city/lookup">Login</a>
+			<br>
+			<p id="accountYetText">Dont Have an Account Yet?</p>
+			<br>
+			<a class="uk-button uk-button-default" type="button" href="/signup">SIGN UP</a>
+		</fieldset>
+	</div>
+	<div class="uk-width-1-3">
+</div>
+</div>
+<!-- Slideshow of images -->
+
+<div>
+	<img src ='' id= "Image1">
+
+</div>

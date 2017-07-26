@@ -1,18 +1,43 @@
-<nav class="uk-navbar-container uk-margin" uk-navbar>
-	<div class="uk-navbar-left">
-		<div class="uk-navbar-item uk-logo vagabondLogo">Vagabond
-		</div>
-		</div>
-		<div class="uk-navbar-right">
-			<div class="uk-navbar-item uk-navbar-right">
-				<button class="uk-button uk-button-default" type="button" href="/wishlist" uk-icon="icon: heart">Wishlist
-				</button>
-				<button class="uk-button uk-button-default" type="button" href="/wishlist" uk-icon="icon: home">
-				</button>
-				<button class="uk-button uk-button-default" type="button" href="/wishlist" uk-icon="icon: user">
-				</button>
-			</div>
-		</div>
-	
-
+<!-- Navbar -->
+<nav class="uk-navbar-container" uk-navbar>
+	<div class="uk-navbar-item uk-logo vagabondLogo uk-navbar-left">Vagabond</div>
+	<div class="uk-navbar-item uk-navbar-right">
+		<a class="uk-button uk-button-default" type="button" href="/" uk-icon="icon: home">
+		</a>
+		<a class="uk-button uk-button-default" type="button" href="/" uk-icon="icon: sign-out">
+		</a>
+	</div>
 </nav>
+<div class="background uk-width-1-1">
+	<div class="uk-width-1-8"></div>
+	<center>
+	<div class="uk-width-1-2" id="profileBox">
+		
+		<div id="accountBox">
+			<h3>Account Info</h3>
+			<p>First Name: </p>
+			<p id="firstNameDisplay"></p>
+			<p>Last Name: </p>
+			<p id="lastNameDisplay"></p>
+			<p>e-mail: </p>
+			<p id="emailDisplay"></p>
+			<p>User Name: </p>
+			<p id="userNameDisplay"></p>
+			<p>Location: </p>
+			<p id="locationDisplay"></p>
+			<p>Age: </p>
+			<p id="ageDisplay"></p>
+		</div>
+		<div id="wishlistBox">
+			<h3>Wish List</h3>
+			<p id="wishlistDisplay"></p>
+		</div>
+		<div id="citiesVisitedBox">
+			<h3>Cities Visited</h3>
+			<p id="citiesVisitedDisplay"></p>
+		</div>
+	</div>
+	</center>
+	
+	<div class="uk-width-1-8"></div>
+</div>
