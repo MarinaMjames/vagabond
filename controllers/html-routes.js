@@ -20,6 +20,7 @@ module.exports = function(app) {
   app.get("/city/lookup", function(req, res){
     res.render("app");
   });
+
   app.get("/account", function(req, res){
     res.render("profile");
   });
@@ -29,4 +30,25 @@ module.exports = function(app) {
   app.get("/wishlist", function(req, res){
     res.render("");
   });
+
+  // Figure out shit
+app.get('/city/lookup', function(req,res){
+  db.City.findAll({})
+    .then(function(bio){
+      res.render("app", {
+        bio: bio
+      });
+    });
+});
+
+
+  
 };
+
+
+
+
+
+
+
+

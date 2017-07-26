@@ -30,13 +30,18 @@
         <option value="seattle">Seattle</option>
         <option value="washington dc">Washington D.C.</option>
     </select>
+    
     <button class="uk-button uk-button-default" id="search" type="submit">Search
     </button>
 </form>
 
 
 
-<div id="city-info"></div>
+<div id="city-info">
+   {{#each bio}}
+      <p>{{@app}}. {{this}}</p>
+   {{/each}}
+</div>
 
 
 <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
