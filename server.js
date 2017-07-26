@@ -43,7 +43,7 @@ require("./controllers/api-routes.js")(app);
 var authRoute = require('./controllers/auth.js')(app, passport);
 	
 //load passport strategies
-// require('./config/passport/passport.js')(passport, models.user);
+require('./config/passport/passport.js')(passport, models.user);
 
 // Syncing our sequelize models and then starting our express app
 db.sequelize.sync({ force: true }).then(function() {
