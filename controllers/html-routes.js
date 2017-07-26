@@ -13,7 +13,7 @@ module.exports = function(app) {
   // Each of the below routes just handles the HTML page that the user gets sent to.
 
   // index route loads view.html
-  app.get("/", function(req, res) {
+  app.get("/", function(req, res){
     res.render("index");
   });
 
@@ -26,5 +26,7 @@ module.exports = function(app) {
   app.get("/signup", function(req, res){
     res.render("signup");
   });
-
+  app.get("/wishlist", function(req, res){
+    res.render("");
+  });
 };

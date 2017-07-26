@@ -1,0 +1,12 @@
+var authController = require('./authcontrollers.js');
+ 
+module.exports = function(app, passport) {
+ 
+    app.get('/signup', authController.signup);
+    app.get('/index', authController.signin);
+    app.post('/signup', passport.authenticate('local-signup', {
+        successRedirect: '/dashboard',
+        failureRedirect: '/signup'
+    }));
+ 
+}
