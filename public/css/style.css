@@ -150,3 +150,14 @@
 	padding-top: 50px;
 	padding-bottom: 300px;
 }
+
+img {
+	max-width: 500px;
+	max-height: 400px;
+}
+
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
