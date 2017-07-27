@@ -150,3 +150,8 @@
 	padding-top: 50px;
 	padding-bottom: 300px;
 }
+
+img {
+	max-width: 600px;
+	max-height: 400px;
+}
