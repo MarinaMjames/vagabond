@@ -17,16 +17,16 @@ module.exports = function(app) {
     res.render("index");
   });
 
-  app.get("/city/lookup", function(req, res){
-    res.render("app");
-  });
+  // app.get("/city", function(req, res){
+  //   res.render("app");
+  // });
   app.get("/account", function(req, res){
     res.render("profile");
   });
-  app.get("/signup", function(req, res){
-    res.render("signup");
-  });
-  app.get("/wishlist", function(req, res){
-    res.render("");
-  });
+  // app.get("/signup", function(req, res){
+  //   res.render("signup");
+  // });
+  // app.get("/wishlist", function(req, res){
+  //   res.render("");
+  // });
 };
