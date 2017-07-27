@@ -42,7 +42,18 @@ app.get('/city/lookup', function(req,res){
 });
 
 
-  
+  // app.get("/city", function(req, res){
+  //   res.render("app");
+  // });
+  app.get("/account", function(req, res){
+    res.render("profile");
+  });
+  // app.get("/signup", function(req, res){
+  //   res.render("signup");
+  // });
+  // app.get("/wishlist", function(req, res){
+  //   res.render("");
+  // });
 };
 
 
