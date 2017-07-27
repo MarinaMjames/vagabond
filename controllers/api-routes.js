@@ -4,7 +4,9 @@
 
 // Dependencies
 // =============================================================
+var express = require("express");
 
+var router = express.Router();
 // Requiring our models
 var db = require("../models");
 
@@ -12,28 +14,37 @@ var db = require("../models");
 // =============================================================
 module.exports = function(app) {
 
-  // // GET route for getting all of the posts
-  // app.get("/", function(req, res) {
-  //   // 1. Add a join here to include all of the Authors to these posts
-  //   db.User.findAll({}).then(function(dbData) {
-  //     res.json(dbData);
-  //   });
-  // });
+// Create all our routes and set up logic within those routes where required.
+// router.get("/", function(req, res) {
+//   db.all(function(data) {
+//     var hbsObject = {
+//       users: data
+//     };
+//     console.log(hbsObject);
+//     res.render("index", hbsObject);
+//   });
+// });
+
+// router.post("/signup", function(req, res) {
+//   db.create([req.body], function() {
+//     res.redirect("/city");
+//   });
+// });
 
   // POST route for saving a new post
-  app.post("/api/users", function(req, res) {
+  app.post("/signup", function(req, res) {
+    console.log(req.body);
     db.User.create(req.body).then(function(dbData) {
-      console.log(req.body);
-      res.json(dbData);
+      res.redirect("/city");
     });
   });
 
-  // Get rotue for retrieving a single post
-  app.get("/api/users", function(req, res) {
-    db.User.findAll({}).then(function(dbData) {
-      res.json(dbData);
-    });
-  });
+  // // Get rotue for retrieving a single post
+  // app.get("/city", function(req, res) {
+  //   db.User.findAll({}).then(function(dbData) {
+  //     res.render(dbData);
+  //   });
+  // });
 
   // Delete User Account
   // app.delete("/api/burgers/:id", function(req, res) {
