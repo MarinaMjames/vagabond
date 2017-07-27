@@ -152,6 +152,12 @@
 }
 
 img {
-	max-width: 600px;
+	max-width: 500px;
 	max-height: 400px;
+}
+
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
 }
