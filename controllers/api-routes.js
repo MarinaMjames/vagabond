@@ -14,23 +14,6 @@ var db = require("../models");
 // =============================================================
 module.exports = function(app) {
 
-// Create all our routes and set up logic within those routes where required.
-// router.get("/", function(req, res) {
-//   db.all(function(data) {
-//     var hbsObject = {
-//       users: data
-//     };
-//     console.log(hbsObject);
-//     res.render("index", hbsObject);
-//   });
-// });
-
-// router.post("/signup", function(req, res) {
-//   db.create([req.body], function() {
-//     res.redirect("/city");
-//   });
-// });
-
   // POST route for saving a new post
   app.post("/signup", function(req, res) {
     console.log(req.body);
@@ -39,10 +22,18 @@ module.exports = function(app) {
     });
   });
 
-  // // Get rotue for retrieving a single post
+
+  // POST route for saving a new post
+  app.post("/signin", function(req, res) {
+    console.log(req.body);
+    db.Login.create(req.body).then(function(dbData) {
+      res.redirect("/city");
+    });
+  });
   // app.get("/city", function(req, res) {
-  //   db.User.findAll({}).then(function(dbData) {
-  //     res.render(dbData);
+  //   console.log(req.body);
+  //   db.User.create(req.body).then(function(dbData) {
+  //     res.redirect("/city");
   //   });
   // });
 
