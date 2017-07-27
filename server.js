@@ -45,6 +45,7 @@ var authRoute = require('./controllers/auth.js')(app, passport);
 //load passport strategies
 require('./config/passport/passport.js')(passport, db.User);
 
+
 // Syncing our sequelize models and then starting our express app
 db.sequelize.sync({ force: true }).then(function() {
   app.listen(PORT, function() {
