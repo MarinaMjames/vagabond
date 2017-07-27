@@ -13,7 +13,9 @@
   </div>
 </nav>
 <center>
+
 <div class="background uk-width-1-1" id="containerBox">
+
 <form action="/city/lookup" method="get" id="cityDropDown">
     <select class="uk-select uk-form-width-medium">
         <option value="atlanta">Atlanta</option>
@@ -33,13 +35,18 @@
         <option value="seattle">Seattle</option>
         <option value="washington dc">Washington D.C.</option>
     </select>
+    
     <button class="uk-button uk-button-default" id="search" type="submit">Search
     </button>
 </form>
 
 
 
-<div id="city-info"></div>
+<div id="city-info">
+   {{#each bio}}
+      <p>{{@app}}. {{this}}</p>
+   {{/each}}
+</div>
 
 
 <div id="carousel-example-generic" class="carousel slide slideshow-container" data-ride="carousel">
@@ -98,13 +105,10 @@
 </div>
 </div>
 
-
 <div class="uk-container uk-width-3-4" id="attractionBox">
 <h3>Attractions: </h3>
     <li class="attractionListItem"></li>
 </div>
-
-
 </center>
 
 <script type="text/javascript" src="/js/pixabay.js"></script>

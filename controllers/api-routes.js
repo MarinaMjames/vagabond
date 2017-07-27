@@ -46,6 +46,26 @@ module.exports = function(app) {
   //   });
   // });
 
+
+
+  app.get('/city/lookup', function(req, res){
+    var x = db.City.findAll({
+      where: {}
+    }).then(function(dbData){
+      res.json(dbData);
+
+    console.log('ANYTHING');
+    });
+  });
+  // app.get("/city/lookup", function(req,res){
+  //   db.City.findAll({
+  //     attributes: {exclude: ['id']}
+  //   }).then(function(response){
+  //     res.json(resonse);
+  //     console.log(response);
+  //   });
+  // });
+
   // Delete User Account
   // app.delete("/api/burgers/:id", function(req, res) {
   //   db.User.destroy({
