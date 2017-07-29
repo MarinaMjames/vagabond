@@ -1,7 +1,8 @@
 body {
-	background-image: url(https://globehuntersltd.files.wordpress.com/2014/08/new-york-cityscape.jpg);
+	background-image: url(https://user-images.githubusercontent.com/26077051/28740893-53cbe010-73d9-11e7-9e07-46f827bcb9a7.jpeg);
     background-repeat: no-repeat;
-    background-size: 150% 125%;
+    /*background-size: 100%;*/
+    background-size: 170%;
 }
 
 .vagabondLogo {
@@ -160,4 +161,8 @@ img {
   max-width: 1000px;
   position: relative;
   margin: auto;
+}
+
+.uk-navbar-container:not(.uk-navbar-transparent){
+	background: #EBE0D6;
 }
