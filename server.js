@@ -47,6 +47,41 @@ var authRoute = require('./controllers/auth.js')(app, passport);
 
 require('./config/passport/passport.js')(passport, db.User);
 
+var Nightmare = require('nightmare');
+var nightmare = Nightmare({show:true});
+
+nightmare
+  .goto('http://localhost:8080/')
+  .click('#newUser')
+  
+  .type('#first_name', 'Brian')
+  .type('#last_name', 'Dolan')
+  .type('#email', 'bdolan94@gmail.com')
+  .type('#username', 'Bdolan')
+  .type('#password', 'IloveMarina')
+  .type('#location', 'NJ')
+  .type('#age', '23')
+  .click('#done')
+
+  .wait()
+
+  
+  .screenshot("FILENAME.png")
+  
+  .wait()
+
+  
+  .evaluate(function () {
+    return document.querySelector('http://localhost:8080/city').href;
+  })
+  .end()
+  .then(function (result) {
+    console.log(result);
+  })
+  .catch(function (error) {
+    console.error('Search failed:', error);
+  });
+
 // Syncing our sequelize models and then starting our express app
 db.sequelize.sync(
 	// { force: true }

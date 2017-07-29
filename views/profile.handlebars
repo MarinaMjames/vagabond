@@ -11,34 +11,32 @@
 <center>
 <div class="background uk-width-1-1" id="containerBox">
 	<div class="uk-width-1-8"></div>
-
+ 
 	
 	<div class="uk-width-1-2" id="profileBox">
-		
-		<div id="accountBox">
+		{{#each User}}
 			<h3>Account Info</h3>
-			<p>First Name: </p>
-			<p id="firstNameDisplay"></p>
-			<p>Last Name: </p>
-			<p id="lastNameDisplay"></p>
-			<p>E-mail: </p>
-			<p id="emailDisplay"></p>
-			<p>User Name: </p>
-			<p id="userNameDisplay"></p>
-			<p>Location: </p>
-			<p id="locationDisplay"></p>
-			<p>Age: </p>
-			<p id="ageDisplay"></p>
-		</div>
-		<div id="wishlistBox">
+
+			<p>First Name: {{this.first_name}}</p>
+			<p>Last Name: {{this.last_name}}</p>
+			<p>e-mail: {{this.email}}</p>
+			<p>User Name: {{this.username}}</p>
+			<p>Location: {{this.location}}</p>
+			<p>Age: {{this.age}}</p>
+		{{/each}}
+{{!-- 		<div id="wishlistBox">
 			<h3>Wish List</h3>
 			<p id="wishlistDisplay"></p>
 		</div>
 		<div id="citiesVisitedBox">
 			<h3>Cities Visited</h3>
 			<p id="citiesVisitedDisplay"></p>
-		</div>
+		</div> --}}
+
+
 	</div>
+
+
 	
 	
 	<div class="uk-width-1-8"></div>

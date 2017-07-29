@@ -32,7 +32,7 @@ module.exports = function(app) {
   });
 
    // Get rotue for retrieving a single post
-  app.get("/city/:city", function(req, res) {
+  app.get("/:city", function(req, res) {
     // 2. Add a join here to include the Author who wrote the Post
     db.City.findOne({
       where: {
