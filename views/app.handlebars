@@ -18,9 +18,10 @@
 
 <form action="/city/{{this.id}}" method="GET" id="cityDropDown">
 
-    <select class="uk-select uk-form-width-medium">
-        <option name="1" value="1" id="1">Atlanta</option>
-        <option name="2" value="2">Austin</option>
+    <select id="selectbox" class="uk-select uk-form-width-medium" onchange="javascript:location.href = this.value;">
+        <option name="city" value="atlanta" id="1">Atlanta</option>
+        <option name="city" value="atlanta" id="1">Atlanta</option>
+        <option name="city" value="austin">Austin</option>
         <option name="city" value="boston">Boston</option>
         <option name="city" value="chicago">Chicago</option>
         <option name="city" value="cleveland">Cleveland</option>
@@ -37,24 +38,24 @@
         <option name="city" value="washington dc">Washington D.C.</option>
     </select>
 
-    <button class="uk-button uk-button-default" type="submit">Search
+    <button class="uk-button uk-button-default" id="search" type="submit">Search
 
     </button>
 </form>
 
 
 
-<div id="city-info">
+{{!-- <div id="city-info">
 
   
   {{this.city}}
 
    {{#each bio}}
-      <p>{{@app}}. {{this}}</p>
+      <p> {{this}}</p>
    {{/each}}
-</div>
-
-
+</div> --}}
+{{!-- <div id="google-map"></div> --}}
+{{!-- <iframe id="google-map" width="800" height="600" frameborder="0" style="border:0"></iframe> --}}
 <div id="carousel-example-generic" class="carousel slide slideshow-container" data-ride="carousel">
   <!-- Indicators -->
   <ol class="carousel-indicators">
@@ -113,7 +114,7 @@
 
 <div class="uk-container uk-width-3-4" id="attractionBox">
 <h3>Attractions: </h3>
-    <p>{{this.landmark1}}</p>
+    <p>{{this.City.dataValues.landmark1}}</p>
     <p>{{this.landmark2}}</p>
     <p>{{this.landmark3}}</p>
     <p>{{this.landmark4}}</p>
@@ -126,5 +127,15 @@
 
 </div>
 </center>
-
+<script type="text/javascript">
+   $("#search").onclick = function(){
+       location.href=document.getElementById("selectbox").value;
+     }      
+</script>
 <script type="text/javascript" src="/js/pixabay.js"></script>
+<script type="text/javascript" src="/js/maps.js"></script>
+<!-- jQuery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+
+<!-- google API -->
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB04JBtICm3X_pnv53olgskaJ3ttfIRtHw" async defer></script>

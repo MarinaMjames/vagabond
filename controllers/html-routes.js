@@ -17,7 +17,7 @@ module.exports = function(app) {
     res.render("index");
   });
 
-  app.get("/city/lookup", function(req, res){
+  app.get("/city", function(req, res){
     res.render("app");
   });
 
