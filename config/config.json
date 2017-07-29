@@ -1,9 +1,9 @@
 {
   "development": {
-    "username": "root",
-    "password": "Olivia13!",
-    "database": "vagabond",
-    "host": "127.0.0.1",
+    "username": "rtp9lw1b9ufkqre8",
+    "password": "q2l1yn8lx4bs2ro3",
+    "database": "n5joyto0wxctuit0",
+    "host": "lgg2gx1ha7yp2w0k.cbetxkdyhwsb.us-east-1.rds.amazonaws.com",
     "dialect": "mysql"
   },
   "test": {
