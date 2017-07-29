@@ -1,0 +1,49 @@
+<!-- Navbar -->
+<nav class="uk-navbar-container" uk-navbar>
+	<div class="uk-navbar-item uk-logo vagabondLogo uk-navbar-left"><i class="fa fa-suitcase" aria-hidden="true"></i> Vagabond</div>
+	<div class="uk-navbar-item uk-navbar-right">
+		<a class="uk-button uk-button-default" type="button" href="/" uk-icon="icon: home">
+		</a>
+		<a class="uk-button uk-button-default" type="button" href="/" uk-icon="icon: sign-out">
+		</a>
+	</div>
+</nav>
+
+<div class="background uk-width-1-1">
+	<div class="uk-width-1-4">
+	</div>
+	<!-- Sign Up Form -->
+	<div class="uk-container uk-width-1-2">
+		<fieldset class="uk-fieldset uk-animation-scale-up uk-animation-15" id="loginBox">
+			<form class="uk-form" action="/signup" method="POST">
+				<center><legend class="uk-legend">Sign-Up</legend></center>
+				<div class="uk-margin">
+					<input class="uk-input" id="first_name" type="text" name="first_name" placeholder="First Name">
+				</div>
+				<div class="uk-margin">
+					<input class="uk-input" id="last_name" type="text" name="last_name" placeholder="Last Name">
+				</div>
+				<div class="uk-margin">
+					<input class="uk-input" id="email" type="email" name="email" placeholder="e-mail">
+				</div>
+				<div class="uk-margin">
+					<input class="uk-input" id="username" type="text" name="username" placeholder="User Name">
+				</div>
+				<div class="uk-margin uk-form-password">
+					<input class="uk-input uk-form-password-toggle" id="password" type="password" name="password" placeholder="Password" data-uk-form-password></input>
+				</div>
+				<div class="uk-margin">
+					<input class="uk-input" type="text" id="location" name="location" placeholder="Location">
+				</div>
+				<div class="uk-margin">
+					<input class="uk-input" type="text" id="age" name="age" placeholder="Age">
+				</div>
+				<button class="uk-button uk-button-default" id="done" type="submit">SIGN UP
+				</button>
+</form>
+				
+		</fieldset>
+	</div>
+	<div class="uk-width-1-4">
+	</div>
+</div>
