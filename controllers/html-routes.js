@@ -17,6 +17,31 @@ module.exports = function(app) {
     res.render("index");
   });
 
+  app.get("/city/lookup", function(req, res){
+    res.render("app");
+  });
+
+  app.get("/account", function(req, res){
+    res.render("profile");
+  });
+  app.get("/signup", function(req, res){
+    res.render("signup");
+  });
+  app.get("/wishlist", function(req, res){
+    res.render("");
+  });
+
+  // Figure out shit
+app.get('/city/lookup', function(req,res){
+  db.City.findAll({})
+    .then(function(bio){
+      res.render("app", {
+        bio: bio
+      });
+    });
+});
+
+
   // app.get("/city", function(req, res){
   //   res.render("app");
   // });
@@ -30,3 +55,11 @@ module.exports = function(app) {
   //   res.render("");
   // });
 };
+
+
+
+
+
+
+
+

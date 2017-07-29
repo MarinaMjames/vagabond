@@ -1,3 +1,4 @@
+
 //Pixelbay API
 
 function getPixelbay (){
@@ -42,7 +43,6 @@ function getPixelbay (){
 
   })
 }
-
 /* Hide carousel till city is searched for*/
 $(function(){
   $("#carousel-example-generic").hide();
@@ -54,7 +54,6 @@ $("#search").on("click", function(event){
   console.log("CLICK WORKS")
   $("#city-info").empty();
   getPixelbay();
-
 });
 
 
