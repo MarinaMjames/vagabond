@@ -45,10 +45,35 @@ module.exports = function(app) {
   });
 
   // app.get("/city", function(req, res) {
-  //   // console.log(req.body);
-  //   // db.User.create(req.body).then(function(dbData) {
-  //   //   res.redirect("/city");
-  //   // });
+  //   console.log(req.body);
+  //   db.User.create(req.body).then(function(dbData) {
+  //     res.redirect("/city");
+  //   });
+  // });
+
+app.post('/app/cities', function(req, res){
+  db.City.build({
+    city: city,
+  }).then(function(dbData){
+    res.json(dbData);
+  });
+});
+
+// July 5th 2:33
+  app.get('/api/cities', function(req, res){
+    db.City.findAll({ }).then(function(data){
+      var hbsObject = {
+       City: data
+     }
+      res.render("app", hbsObject)
+    })
+    });  // app.get("/city/lookup", function(req,res){
+  //   db.City.findAll({
+  //     attributes: {exclude: ['id']}
+  //   }).then(function(response){
+  //     res.json(resonse);
+  //     console.log(response);
+  //   });
   // });
 
   // Delete User Account
