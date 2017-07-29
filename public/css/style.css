@@ -1,4 +1,4 @@
-.background {
+body {
 	background-image: url(https://globehuntersltd.files.wordpress.com/2014/08/new-york-cityscape.jpg);
     background-repeat: no-repeat;
     background-size: 150% 125%;
@@ -149,4 +149,15 @@
 #containerBox {
 	padding-top: 50px;
 	padding-bottom: 300px;
+}
+
+img {
+	max-width: 500px;
+	max-height: 400px;
+}
+
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
 }

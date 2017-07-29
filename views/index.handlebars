@@ -6,22 +6,23 @@
 <div class="background uk-width-1-1">
 <div class="uk-width-1-3">
 </div>
-	<div class="uk-container uk-width-1-3" id="backgroundImg">
+	<div class="uk-container uk-width-1-3">
 		<fieldset class="uk-fieldset" id="loginBox">
-			<form class="uk-form">
+			<form class="uk-form" action="/signin" method="POST">
 				<legend class="uk-legend">Login</legend>
 				<div class="uk-margin">
-					<input class="uk-input uk-form-width-medium" id="username" type="text" placeholder="User Name" required>
+					<input class="uk-input uk-form-width-medium" type="text"  name="username" placeholder="User Name" required>
 				</div>
 				<div class="uk-margin uk-form-password">
-					<input class="uk-input uk-form-password-toggle" type="password" id="passwordInput" placeholder="Password" data-uk-form-password></input>
+					<input class="uk-input uk-form-password-toggle" type="password" name="password" placeholder="Password" data-uk-form-password></input>
 				</div>
-			</form>
-			<a class="uk-button uk-button-default" type="button" href="/city/lookup">Login</a>
+			
+			<button class="uk-button uk-button-default" type="submit">Login</button>
 			<br>
 			<p id="accountYetText">Dont Have an Account Yet?</p>
 			<br>
 			<a class="uk-button uk-button-default" type="button" href="/signup">SIGN UP</a>
+			</form>
 		</fieldset>
 	</div>
 	<div class="uk-width-1-3">

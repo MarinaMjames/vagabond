@@ -4,7 +4,9 @@
 
 // Dependencies
 // =============================================================
+var express = require("express");
 
+var router = express.Router();
 // Requiring our models
 var db = require("../models");
 
@@ -12,28 +14,28 @@ var db = require("../models");
 // =============================================================
 module.exports = function(app) {
 
-  // // GET route for getting all of the posts
-  // app.get("/", function(req, res) {
-  //   // 1. Add a join here to include all of the Authors to these posts
-  //   db.User.findAll({}).then(function(dbData) {
-  //     res.json(dbData);
-  //   });
-  // });
+  // POST route for saving a new post
+  app.post("/signup", function(req, res) {
+    console.log(req.body);
+    db.User.create(req.body).then(function(dbData) {
+      res.redirect("/city");
+    });
+  });
+
 
   // POST route for saving a new post
-  app.post("/api/users", function(req, res) {
-    db.User.create(req.body).then(function(dbData) {
-      console.log(req.body);
-      res.json(dbData);
+  app.post("/signin", function(req, res) {
+    console.log(req.body);
+    db.Login.create(req.body).then(function(dbData) {
+      res.redirect("/city");
     });
   });
-
-  // Get rotue for retrieving a single post
-  app.get("/api/users", function(req, res) {
-    db.User.findAll({}).then(function(dbData) {
-      res.json(dbData);
-    });
-  });
+  // app.get("/city", function(req, res) {
+  //   console.log(req.body);
+  //   db.User.create(req.body).then(function(dbData) {
+  //     res.redirect("/city");
+  //   });
+  // });
 
 app.post('/app/cities', function(req, res){
   db.City.build({

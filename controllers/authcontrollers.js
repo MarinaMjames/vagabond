@@ -3,7 +3,7 @@ module.exports = {
     	res.render('signup');
     },
     signin: function(req, res) {
-    	res.render('index');
+    	res.render('app');
     },
     city: function(req, res) {
  		res.render('app');
