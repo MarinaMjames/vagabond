@@ -43,6 +43,12 @@ module.exports = function(sequelize, DataTypes) {
     status: {
       type: DataTypes.ENUM('active', 'inactive'),
       defaultValue: 'active'
+    },
+    createdAt: {
+      type: DataTypes.DATE
+    },
+    updatedAt: {
+      type: DataTypes.DATE
     }
   });
   return User;
