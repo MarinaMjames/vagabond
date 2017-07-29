@@ -35,18 +35,34 @@ module.exports = function(app) {
     });
   });
 
-
-
-  app.get('/city/lookup', function(req, res){
-    var x = db.City.findAll({
-      where: {}
-    }).then(function(dbData){
-      res.json(dbData);
-
-    console.log('ANYTHING');
-    });
+app.post('/app/cities', function(req, res){
+  db.City.build({
+    city: req.body.city,
+    bio: req.body.bio,
+    landmark1: req.body.landmark1,
+    landmark2: req.body.landmark2,
+    landmark3: req.body.landmark3,
+    landmark4: req.body.landmark4,
+    landmark5: req.body.landmark5,
+    landmark6: req.body.landmark6,
+    landmark7: req.body.landmark7,
+    landmark8: req.body.landmark8,
+    landmark9: req.body.landmark9,
+    landmark10: req.body.landmark10
+  }).then(function(dbData){
+    res.json(dbData);
   });
-  // app.get("/city/lookup", function(req,res){
+});
+
+// July 5th 2:33
+  app.get('/api/cities', function(req, res){
+    db.City.findAll({ }).then(function(data){
+      var hbsObject = {
+       City: data
+     }
+      res.render("app", hbsObject)
+    })
+    });  // app.get("/city/lookup", function(req,res){
   //   db.City.findAll({
   //     attributes: {exclude: ['id']}
   //   }).then(function(response){

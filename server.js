@@ -10,6 +10,7 @@ var handlebars = require('express-handlebars');
 var passport   = require('passport');
 var session    = require('express-session');
 var env = require('dotenv').load();
+var router = express.Router();
 
 // Sets up the Express App
 // =============================================================
@@ -50,7 +51,15 @@ require('./config/passport/passport.js')(passport, db.User);
 db.sequelize.sync({ force: true }).then(function() {
   app.listen(PORT, function() {
     console.log("App listening on PORT " + PORT);
+
+ db.City.findAll({ raw: true })
+.then(function(asd) {
+    console.log(asd);
+
+});
   });
 });
+
+
 
 
