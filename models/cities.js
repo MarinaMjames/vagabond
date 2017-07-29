@@ -55,10 +55,12 @@ module.exports = function(sequelize, DataTypes) {
       notNull: true
     },
     createdAt: {
+
       type: DataTypes.DATE
     },
     updatedAt: {
       type: DataTypes.DATE
+      
     }
   });
   return City;
