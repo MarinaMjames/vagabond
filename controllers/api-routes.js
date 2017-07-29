@@ -38,9 +38,9 @@ module.exports = function(app) {
       where: {
         city: req.params.city
       }
-    }).then(function(dbData) {
-      console.log(dbData);
-      // res.render("app", dbData);
+    }).then(function (data) {
+      var hbsObject = { "city": data };
+      res.render('app', hbsObject);
     });
   });
 
