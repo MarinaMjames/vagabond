@@ -1,7 +1,6 @@
 body {
-	background-image: url(https://user-images.githubusercontent.com/26077051/28740893-53cbe010-73d9-11e7-9e07-46f827bcb9a7.jpeg);
+	background-image: url(https://user-images.githubusercontent.com/26077051/28740850-86e57890-73d8-11e7-9e04-e51e9882e3b0.jpeg);
     background-repeat: no-repeat;
-    /*background-size: 100%;*/
     background-size: 170%;
 }
 
@@ -161,8 +160,4 @@ img {
   max-width: 1000px;
   position: relative;
   margin: auto;
-}
-
-.uk-navbar-container:not(.uk-navbar-transparent){
-	background: #EBE0D6;
 }
