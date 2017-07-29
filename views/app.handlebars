@@ -4,8 +4,8 @@
   <div class="uk-navbar-item uk-navbar-right">
     <a class="uk-button uk-button-default" type="button" href="/" uk-icon="icon: home">
     </a>
-    <a class="uk-button uk-button-default" type="button" href="/wishlist" uk-icon="icon: heart">Wishlist
-    </a>
+    {{!-- <a class="uk-button uk-button-default" type="button" href="/wishlist" uk-icon="icon: heart">Wishlist
+    </a> --}}
     <a class="uk-button uk-button-default" type="button" href="/account" uk-icon="icon: user">
     </a>
     <a class="uk-button uk-button-default" type="button" href="/" uk-icon="icon: sign-out">
@@ -16,11 +16,11 @@
 
 <div class="background uk-width-1-1" id="containerBox">
 
-<form action="/city/:city" method="GET" id="cityDropDown">
+<form action="/city/{{this.id}}" method="GET" id="cityDropDown">
 
     <select class="uk-select uk-form-width-medium">
-        <option name="city" value="atlanta">Atlanta</option>
-        <option name="city" value="austin">Austin</option>
+        <option name="1" value="1" id="1">Atlanta</option>
+        <option name="2" value="2">Austin</option>
         <option name="city" value="boston">Boston</option>
         <option name="city" value="chicago">Chicago</option>
         <option name="city" value="cleveland">Cleveland</option>
@@ -113,7 +113,6 @@
 
 <div class="uk-container uk-width-3-4" id="attractionBox">
 <h3>Attractions: </h3>
-{{#each city}}
     <p>{{this.landmark1}}</p>
     <p>{{this.landmark2}}</p>
     <p>{{this.landmark3}}</p>
@@ -124,7 +123,7 @@
     <p>{{this.landmark8}}</p>
     <p>{{this.landmark9}}</p>
     <p>{{this.landmark10}}</p>
-{{/each}}
+
 </div>
 </center>
 

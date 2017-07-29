@@ -36,7 +36,7 @@ module.exports = function(app) {
     // 2. Add a join here to include the Author who wrote the Post
     db.City.findOne({
       where: {
-        city: req.params.city
+        id: req.params.id
       }
     }).then(function(dbData) {
       console.log(dbData);
@@ -48,26 +48,6 @@ module.exports = function(app) {
   //   console.log(req.body);
   //   db.User.create(req.body).then(function(dbData) {
   //     res.redirect("/city");
-  //   });
-  // });
-
-
-
-  app.get('/city/lookup', function(req, res){
-    var x = db.City.findAll({
-      where: {}
-    }).then(function(dbData){
-      res.json(dbData);
-
-    console.log('ANYTHING');
-    });
-  });
-  // app.get("/city/lookup", function(req,res){
-  //   db.City.findAll({
-  //     attributes: {exclude: ['id']}
-  //   }).then(function(response){
-  //     res.json(resonse);
-  //     console.log(response);
   //   });
   // });
 
