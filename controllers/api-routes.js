@@ -30,6 +30,20 @@ module.exports = function(app) {
       res.redirect("/city");
     });
   });
+
+   // Get rotue for retrieving a single post
+  app.get("/city/:city", function(req, res) {
+    // 2. Add a join here to include the Author who wrote the Post
+    db.City.findOne({
+      where: {
+        city: req.params.city
+      }
+    }).then(function(dbData) {
+      console.log(dbData);
+      // res.render("app", dbData);
+    });
+  });
+
   // app.get("/city", function(req, res) {
   //   console.log(req.body);
   //   db.User.create(req.body).then(function(dbData) {
