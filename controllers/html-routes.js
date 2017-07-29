@@ -31,15 +31,6 @@ module.exports = function(app) {
     res.render("");
   });
 
-  // Figure out shit
-app.get('/city/lookup', function(req,res){
-  db.City.findAll({})
-    .then(function(bio){
-      res.render("app", {
-        bio: bio
-      });
-    });
-});
 
 
   // app.get("/city", function(req, res){

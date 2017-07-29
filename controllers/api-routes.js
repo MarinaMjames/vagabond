@@ -51,18 +51,23 @@ module.exports = function(app) {
   //   });
   // });
 
-
-
-  app.get('/city/lookup', function(req, res){
-    var x = db.City.findAll({
-      where: {}
-    }).then(function(dbData){
-      res.json(dbData);
-
-    console.log('ANYTHING');
-    });
+app.post('/app/cities', function(req, res){
+  db.City.build({
+    city: city,
+  }).then(function(dbData){
+    res.json(dbData);
   });
-  // app.get("/city/lookup", function(req,res){
+});
+
+// July 5th 2:33
+  app.get('/api/cities', function(req, res){
+    db.City.findAll({ }).then(function(data){
+      var hbsObject = {
+       City: data
+     }
+      res.render("app", hbsObject)
+    })
+    });  // app.get("/city/lookup", function(req,res){
   //   db.City.findAll({
   //     attributes: {exclude: ['id']}
   //   }).then(function(response){

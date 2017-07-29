@@ -45,12 +45,8 @@
 
 
 <div id="city-info">
-
-  
-  {{this.city}}
-
-   {{#each bio}}
-      <p>{{@app}}. {{this}}</p>
+   {{#each City}}
+      <p>{{bio}}. {{this}}</p>
    {{/each}}
 </div>
 
@@ -126,6 +122,7 @@
     <p>{{this.landmark10}}</p>
 {{/each}}
 </div>
+
 </center>
 
 <script type="text/javascript" src="/js/pixabay.js"></script>
