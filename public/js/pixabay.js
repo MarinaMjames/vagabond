@@ -44,9 +44,9 @@ function getPixelbay (){
   })
 }
 /* Hide carousel till city is searched for*/
-$(function(){
-  $("#carousel-example-generic").hide();
-});
+// $(function(){
+//   $("#carousel-example-generic").hide();
+// });
 
 $("#search").on("click", function(event){
   $('#carousel-example-generic').show();
