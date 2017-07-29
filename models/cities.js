@@ -53,6 +53,12 @@ module.exports = function(sequelize, DataTypes) {
     landmark10: {
       type: DataTypes.STRING,
       notNull: true
+    },
+    createdAt: {
+      type: DataTypes.DATE
+    },
+    updatedAt: {
+      type: DataTypes.DATE
     }
   });
   return City;
