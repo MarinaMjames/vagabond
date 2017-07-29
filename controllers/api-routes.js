@@ -30,6 +30,20 @@ module.exports = function(app) {
       res.redirect("/city");
     });
   });
+
+   // Get rotue for retrieving a single post
+  app.get("/city/:city", function(req, res) {
+    // 2. Add a join here to include the Author who wrote the Post
+    db.City.findOne({
+      where: {
+        city: req.params.city
+      }
+    }).then(function(dbData) {
+      console.log(dbData);
+      // res.render("app", dbData);
+    });
+  });
+
   // app.get("/city", function(req, res) {
   //   console.log(req.body);
   //   db.User.create(req.body).then(function(dbData) {
@@ -39,18 +53,7 @@ module.exports = function(app) {
 
 app.post('/app/cities', function(req, res){
   db.City.build({
-    city: req.body.city,
-    bio: req.body.bio,
-    landmark1: req.body.landmark1,
-    landmark2: req.body.landmark2,
-    landmark3: req.body.landmark3,
-    landmark4: req.body.landmark4,
-    landmark5: req.body.landmark5,
-    landmark6: req.body.landmark6,
-    landmark7: req.body.landmark7,
-    landmark8: req.body.landmark8,
-    landmark9: req.body.landmark9,
-    landmark10: req.body.landmark10
+    city: city,
   }).then(function(dbData){
     res.json(dbData);
   });
