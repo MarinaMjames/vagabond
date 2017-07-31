@@ -5,7 +5,7 @@ Vagabond is a city-based travel application. Traveling to cities within the Unit
 
 ## Contributors
 - Marina James (https://github.com/MarinaMjames)
-- Jhemarr Anderson ()
+- Jhemarr Anderson (https://github.com/Andersj5)
 - Mike Pesce (https://github.com/mpesce348)
 
 ## Tech Used
